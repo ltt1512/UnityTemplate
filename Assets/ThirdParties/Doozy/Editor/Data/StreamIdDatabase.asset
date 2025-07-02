@@ -14,11 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Database:
     Items:
-    - Category: Main
-      Name: GameResult
-    - Category: Main
-      Name: MainMenu
-    - Category: Main
-      Name: SelectCharacter
+    - Category: FlowMainmenu
+      Name: Setting
     - Category: None
       Name: None

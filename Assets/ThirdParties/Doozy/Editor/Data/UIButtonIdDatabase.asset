@@ -16,11 +16,3 @@ MonoBehaviour:
     Items:
     - Category: None
       Name: None
-    - Category: ViewGameplay
-      Name: Lineup
-    - Category: ViewGameplay
-      Name: NewGame
-    - Category: ViewResult
-      Name: MainMenu
-    - Category: ViewResult
-      Name: Retry

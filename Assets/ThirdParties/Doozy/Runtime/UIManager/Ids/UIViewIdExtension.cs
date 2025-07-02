@@ -14,9 +14,13 @@ namespace Doozy.Runtime.UIManager.Containers
 {
     public partial class UIView
     {
-        public static IEnumerable<UIView> GetViews(UIViewId.Window id) => GetViews(nameof(UIViewId.Window), id.ToString());
-        public static void Show(UIViewId.Window id, bool instant = false) => Show(nameof(UIViewId.Window), id.ToString(), instant);
-        public static void Hide(UIViewId.Window id, bool instant = false) => Hide(nameof(UIViewId.Window), id.ToString(), instant);
+        public static IEnumerable<UIView> GetViews(UIViewId.FlowLoading id) => GetViews(nameof(UIViewId.FlowLoading), id.ToString());
+        public static void Show(UIViewId.FlowLoading id, bool instant = false) => Show(nameof(UIViewId.FlowLoading), id.ToString(), instant);
+        public static void Hide(UIViewId.FlowLoading id, bool instant = false) => Hide(nameof(UIViewId.FlowLoading), id.ToString(), instant);
+
+        public static IEnumerable<UIView> GetViews(UIViewId.FlowMainmenu id) => GetViews(nameof(UIViewId.FlowMainmenu), id.ToString());
+        public static void Show(UIViewId.FlowMainmenu id, bool instant = false) => Show(nameof(UIViewId.FlowMainmenu), id.ToString(), instant);
+        public static void Hide(UIViewId.FlowMainmenu id, bool instant = false) => Hide(nameof(UIViewId.FlowMainmenu), id.ToString(), instant);
     }
 }
 
@@ -24,19 +28,15 @@ namespace Doozy.Runtime.UIManager
 {
     public partial class UIViewId
     {
-        public enum Window
+        public enum FlowLoading
         {
-            Airdrop,
-            AirdropBattlePass,
-            ArenaActionPhase,
-            ArenaEndGame,
-            ArenaReconnectGame,
-            ArenaStartGame,
-            ArenaWindow,
-            LoadingWindow,
-            MainMenu,
-            MatchMakingWindow,
-            Renting
+            Loading
+        }
+
+        public enum FlowMainmenu
+        {
+            Mainmenu,
+            Setting
         }    
     }
 }

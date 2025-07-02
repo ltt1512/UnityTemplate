@@ -721,6 +721,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f4ee35738a60edb4ea43f20ea088f349, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  progressBar: {fileID: 2988954656716142406}
+  progressorTxt: {fileID: 3462002348008176433}
 --- !u!1 &2206440269661180920
 GameObject:
   m_ObjectHideFlags: 0
@@ -796,8 +798,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4294027306
-  m_fontColor: {r: 0.16470589, g: 0.65882355, b: 0.9450981, a: 1}
+    rgba: 4278190080
+  m_fontColor: {r: 0, g: 0, b: 0, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:

@@ -248,12 +248,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 259477326}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 1006349912}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &600082215
 GameObject:
@@ -446,6 +446,7 @@ RectTransform:
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_ConstrainProportionsScale: 0
   m_Children:
+  - {fileID: 259477328}
   - {fileID: 790601498}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -580,9 +581,421 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1006349912}
     m_Modifications:
+    - target: {fileID: 637259620807901370, guid: b8c10163bda8ded43875960a924a5398, type: 3}
+      propertyPath: m_Alpha
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 963182802632832921, guid: b8c10163bda8ded43875960a924a5398, type: 3}
       propertyPath: m_Name
       value: ViewLoading
+      objectReference: {fileID: 0}
+    - target: {fileID: 4002094068394023523, guid: b8c10163bda8ded43875960a924a5398, type: 3}
+      propertyPath: HideAnimation.Fade.Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4002094068394023523, guid: b8c10163bda8ded43875960a924a5398, type: 3}
+      propertyPath: HideAnimation.Fade.ToValue
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4002094068394023523, guid: b8c10163bda8ded43875960a924a5398, type: 3}
+      propertyPath: HideAnimation.Move.Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4002094068394023523, guid: b8c10163bda8ded43875960a924a5398, type: 3}
+      propertyPath: ShowAnimation.Fade.Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4002094068394023523, guid: b8c10163bda8ded43875960a924a5398, type: 3}
+      propertyPath: ShowAnimation.Move.Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4002094068394023523, guid: b8c10163bda8ded43875960a924a5398, type: 3}
+      propertyPath: ShowAnimation.Fade.ToOffset
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4002094068394023523, guid: b8c10163bda8ded43875960a924a5398, type: 3}
+      propertyPath: ShowAnimation.Scale.Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4002094068394023523, guid: b8c10163bda8ded43875960a924a5398, type: 3}
+      propertyPath: HideAnimation.Move.ToValue.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4002094068394023523, guid: b8c10163bda8ded43875960a924a5398, type: 3}
+      propertyPath: HideAnimation.Move.ToValue.y
+      value: 1920.2017
+      objectReference: {fileID: 0}
+    - target: {fileID: 4002094068394023523, guid: b8c10163bda8ded43875960a924a5398, type: 3}
+      propertyPath: ShowAnimation.Fade.FromValue
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4002094068394023523, guid: b8c10163bda8ded43875960a924a5398, type: 3}
+      propertyPath: ShowAnimation.Move.ToValue.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4002094068394023523, guid: b8c10163bda8ded43875960a924a5398, type: 3}
+      propertyPath: HideAnimation.Scale.ToValue.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4002094068394023523, guid: b8c10163bda8ded43875960a924a5398, type: 3}
+      propertyPath: HideAnimation.Scale.ToValue.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4002094068394023523, guid: b8c10163bda8ded43875960a924a5398, type: 3}
+      propertyPath: HideAnimation.Scale.ToValue.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4002094068394023523, guid: b8c10163bda8ded43875960a924a5398, type: 3}
+      propertyPath: HideAnimation.Move.FromValue.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4002094068394023523, guid: b8c10163bda8ded43875960a924a5398, type: 3}
+      propertyPath: HideAnimation.Move.ToDirection
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4002094068394023523, guid: b8c10163bda8ded43875960a924a5398, type: 3}
+      propertyPath: HideAnimation.Rotate.ToValue.z
+      value: 240
+      objectReference: {fileID: 0}
+    - target: {fileID: 4002094068394023523, guid: b8c10163bda8ded43875960a924a5398, type: 3}
+      propertyPath: HideAnimation.Scale.ToOffset.x
+      value: 0.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 4002094068394023523, guid: b8c10163bda8ded43875960a924a5398, type: 3}
+      propertyPath: HideAnimation.Scale.ToOffset.y
+      value: 0.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 4002094068394023523, guid: b8c10163bda8ded43875960a924a5398, type: 3}
+      propertyPath: ShowAnimation.Move.FromValue.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4002094068394023523, guid: b8c10163bda8ded43875960a924a5398, type: 3}
+      propertyPath: ShowAnimation.Move.FromValue.y
+      value: 1920.2017
+      objectReference: {fileID: 0}
+    - target: {fileID: 4002094068394023523, guid: b8c10163bda8ded43875960a924a5398, type: 3}
+      propertyPath: HideAnimation.Fade.CurrentValue
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4002094068394023523, guid: b8c10163bda8ded43875960a924a5398, type: 3}
+      propertyPath: HideAnimation.Rotate.ToOffset.z
+      value: 240
+      objectReference: {fileID: 0}
+    - target: {fileID: 4002094068394023523, guid: b8c10163bda8ded43875960a924a5398, type: 3}
+      propertyPath: ShowAnimation.Fade.CurrentValue
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4002094068394023523, guid: b8c10163bda8ded43875960a924a5398, type: 3}
+      propertyPath: ShowAnimation.Scale.FromValue.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4002094068394023523, guid: b8c10163bda8ded43875960a924a5398, type: 3}
+      propertyPath: ShowAnimation.Scale.FromValue.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4002094068394023523, guid: b8c10163bda8ded43875960a924a5398, type: 3}
+      propertyPath: ShowAnimation.Scale.FromValue.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4002094068394023523, guid: b8c10163bda8ded43875960a924a5398, type: 3}
+      propertyPath: HideAnimation.Fade.ToCustomValue
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4002094068394023523, guid: b8c10163bda8ded43875960a924a5398, type: 3}
+      propertyPath: HideAnimation.Move.Settings.Ease
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 4002094068394023523, guid: b8c10163bda8ded43875960a924a5398, type: 3}
+      propertyPath: ShowAnimation.Move.FromDirection
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4002094068394023523, guid: b8c10163bda8ded43875960a924a5398, type: 3}
+      propertyPath: ShowAnimation.Move.Settings.Ease
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 4002094068394023523, guid: b8c10163bda8ded43875960a924a5398, type: 3}
+      propertyPath: ShowAnimation.Rotate.FromValue.z
+      value: 240
+      objectReference: {fileID: 0}
+    - target: {fileID: 4002094068394023523, guid: b8c10163bda8ded43875960a924a5398, type: 3}
+      propertyPath: ShowAnimation.Scale.FromOffset.x
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4002094068394023523, guid: b8c10163bda8ded43875960a924a5398, type: 3}
+      propertyPath: ShowAnimation.Scale.FromOffset.y
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4002094068394023523, guid: b8c10163bda8ded43875960a924a5398, type: 3}
+      propertyPath: HideAnimation.Move.CurrentValue.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4002094068394023523, guid: b8c10163bda8ded43875960a924a5398, type: 3}
+      propertyPath: HideAnimation.Scale.Settings.Ease
+      value: 26
+      objectReference: {fileID: 0}
+    - target: {fileID: 4002094068394023523, guid: b8c10163bda8ded43875960a924a5398, type: 3}
+      propertyPath: ShowAnimation.Move.CurrentValue.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4002094068394023523, guid: b8c10163bda8ded43875960a924a5398, type: 3}
+      propertyPath: ShowAnimation.Rotate.FromOffset.z
+      value: 240
+      objectReference: {fileID: 0}
+    - target: {fileID: 4002094068394023523, guid: b8c10163bda8ded43875960a924a5398, type: 3}
+      propertyPath: ShowAnimation.Scale.Settings.Ease
+      value: 27
+      objectReference: {fileID: 0}
+    - target: {fileID: 4002094068394023523, guid: b8c10163bda8ded43875960a924a5398, type: 3}
+      propertyPath: HideAnimation.Move.StartPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4002094068394023523, guid: b8c10163bda8ded43875960a924a5398, type: 3}
+      propertyPath: HideAnimation.Rotate.Settings.Ease
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 4002094068394023523, guid: b8c10163bda8ded43875960a924a5398, type: 3}
+      propertyPath: HideAnimation.Scale.CurrentValue.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4002094068394023523, guid: b8c10163bda8ded43875960a924a5398, type: 3}
+      propertyPath: HideAnimation.Scale.CurrentValue.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4002094068394023523, guid: b8c10163bda8ded43875960a924a5398, type: 3}
+      propertyPath: HideAnimation.Scale.CurrentValue.z
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4002094068394023523, guid: b8c10163bda8ded43875960a924a5398, type: 3}
+      propertyPath: ShowAnimation.Fade.FromCustomValue
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4002094068394023523, guid: b8c10163bda8ded43875960a924a5398, type: 3}
+      propertyPath: ShowAnimation.Move.StartPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4002094068394023523, guid: b8c10163bda8ded43875960a924a5398, type: 3}
+      propertyPath: ShowAnimation.Rotate.Settings.Ease
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 4002094068394023523, guid: b8c10163bda8ded43875960a924a5398, type: 3}
+      propertyPath: ShowAnimation.Scale.CurrentValue.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4002094068394023523, guid: b8c10163bda8ded43875960a924a5398, type: 3}
+      propertyPath: ShowAnimation.Scale.CurrentValue.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4002094068394023523, guid: b8c10163bda8ded43875960a924a5398, type: 3}
+      propertyPath: ShowAnimation.Scale.CurrentValue.z
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4002094068394023523, guid: b8c10163bda8ded43875960a924a5398, type: 3}
+      propertyPath: HideAnimation.Fade.ToReferenceValue
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4002094068394023523, guid: b8c10163bda8ded43875960a924a5398, type: 3}
+      propertyPath: HideAnimation.Rotate.CurrentValue.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4002094068394023523, guid: b8c10163bda8ded43875960a924a5398, type: 3}
+      propertyPath: HideAnimation.Scale.ToCustomValue.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4002094068394023523, guid: b8c10163bda8ded43875960a924a5398, type: 3}
+      propertyPath: HideAnimation.Scale.ToCustomValue.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4002094068394023523, guid: b8c10163bda8ded43875960a924a5398, type: 3}
+      propertyPath: HideAnimation.Scale.ToCustomValue.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4002094068394023523, guid: b8c10163bda8ded43875960a924a5398, type: 3}
+      propertyPath: ShowAnimation.Rotate.CurrentValue.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4002094068394023523, guid: b8c10163bda8ded43875960a924a5398, type: 3}
+      propertyPath: ShowAnimation.Scale.ToCustomValue.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4002094068394023523, guid: b8c10163bda8ded43875960a924a5398, type: 3}
+      propertyPath: HideAnimation.Fade.Settings.Duration
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4002094068394023523, guid: b8c10163bda8ded43875960a924a5398, type: 3}
+      propertyPath: HideAnimation.Move.Settings.Duration
+      value: 0.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 4002094068394023523, guid: b8c10163bda8ded43875960a924a5398, type: 3}
+      propertyPath: HideAnimation.Scale.ToReferenceValue
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4002094068394023523, guid: b8c10163bda8ded43875960a924a5398, type: 3}
+      propertyPath: ShowAnimation.Fade.Settings.Duration
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4002094068394023523, guid: b8c10163bda8ded43875960a924a5398, type: 3}
+      propertyPath: ShowAnimation.Move.Settings.Duration
+      value: 0.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 4002094068394023523, guid: b8c10163bda8ded43875960a924a5398, type: 3}
+      propertyPath: HideAnimation.Fade.FromReferenceValue
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4002094068394023523, guid: b8c10163bda8ded43875960a924a5398, type: 3}
+      propertyPath: HideAnimation.Scale.FromCustomValue.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4002094068394023523, guid: b8c10163bda8ded43875960a924a5398, type: 3}
+      propertyPath: HideAnimation.Scale.FromCustomValue.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4002094068394023523, guid: b8c10163bda8ded43875960a924a5398, type: 3}
+      propertyPath: HideAnimation.Scale.FromCustomValue.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4002094068394023523, guid: b8c10163bda8ded43875960a924a5398, type: 3}
+      propertyPath: HideAnimation.Scale.Settings.Duration
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4002094068394023523, guid: b8c10163bda8ded43875960a924a5398, type: 3}
+      propertyPath: ShowAnimation.Fade.FromReferenceValue
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4002094068394023523, guid: b8c10163bda8ded43875960a924a5398, type: 3}
+      propertyPath: ShowAnimation.Scale.FromCustomValue.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4002094068394023523, guid: b8c10163bda8ded43875960a924a5398, type: 3}
+      propertyPath: ShowAnimation.Scale.FromCustomValue.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4002094068394023523, guid: b8c10163bda8ded43875960a924a5398, type: 3}
+      propertyPath: ShowAnimation.Scale.FromCustomValue.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4002094068394023523, guid: b8c10163bda8ded43875960a924a5398, type: 3}
+      propertyPath: ShowAnimation.Scale.Settings.Duration
+      value: 0.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 4002094068394023523, guid: b8c10163bda8ded43875960a924a5398, type: 3}
+      propertyPath: HideAnimation.Move.Settings.StartDelay
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4002094068394023523, guid: b8c10163bda8ded43875960a924a5398, type: 3}
+      propertyPath: ShowAnimation.Rotate.Settings.Duration
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4002094068394023523, guid: b8c10163bda8ded43875960a924a5398, type: 3}
+      propertyPath: ShowAnimation.Scale.FromReferenceValue
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4002094068394023523, guid: b8c10163bda8ded43875960a924a5398, type: 3}
+      propertyPath: ShowAnimation.Scale.Settings.StartDelay
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4002094068394023523, guid: b8c10163bda8ded43875960a924a5398, type: 3}
+      propertyPath: ShowAnimation.Move.Settings.Curve.m_Curve.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4002094068394023523, guid: b8c10163bda8ded43875960a924a5398, type: 3}
+      propertyPath: ShowAnimation.Move.Settings.Curve.m_Curve.Array.data[1].time
+      value: 0.5360872
+      objectReference: {fileID: 0}
+    - target: {fileID: 4002094068394023523, guid: b8c10163bda8ded43875960a924a5398, type: 3}
+      propertyPath: ShowAnimation.Move.Settings.Curve.m_Curve.Array.data[2].time
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4002094068394023523, guid: b8c10163bda8ded43875960a924a5398, type: 3}
+      propertyPath: ShowAnimation.Move.Settings.Curve.m_Curve.Array.data[1].value
+      value: 0.4861448
+      objectReference: {fileID: 0}
+    - target: {fileID: 4002094068394023523, guid: b8c10163bda8ded43875960a924a5398, type: 3}
+      propertyPath: ShowAnimation.Move.Settings.Curve.m_Curve.Array.data[2].value
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4002094068394023523, guid: b8c10163bda8ded43875960a924a5398, type: 3}
+      propertyPath: ShowAnimation.Move.Settings.Curve.m_Curve.Array.data[0].inSlope
+      value: -0.5398274
+      objectReference: {fileID: 0}
+    - target: {fileID: 4002094068394023523, guid: b8c10163bda8ded43875960a924a5398, type: 3}
+      propertyPath: ShowAnimation.Move.Settings.Curve.m_Curve.Array.data[1].inSlope
+      value: -2.2521195
+      objectReference: {fileID: 0}
+    - target: {fileID: 4002094068394023523, guid: b8c10163bda8ded43875960a924a5398, type: 3}
+      propertyPath: ShowAnimation.Move.Settings.Curve.m_Curve.Array.data[2].inSlope
+      value: 0.04207796
+      objectReference: {fileID: 0}
+    - target: {fileID: 4002094068394023523, guid: b8c10163bda8ded43875960a924a5398, type: 3}
+      propertyPath: ShowAnimation.Move.Settings.Curve.m_Curve.Array.data[0].outSlope
+      value: -0.5398274
+      objectReference: {fileID: 0}
+    - target: {fileID: 4002094068394023523, guid: b8c10163bda8ded43875960a924a5398, type: 3}
+      propertyPath: ShowAnimation.Move.Settings.Curve.m_Curve.Array.data[1].inWeight
+      value: 0.020654876
+      objectReference: {fileID: 0}
+    - target: {fileID: 4002094068394023523, guid: b8c10163bda8ded43875960a924a5398, type: 3}
+      propertyPath: ShowAnimation.Move.Settings.Curve.m_Curve.Array.data[1].outSlope
+      value: -2.2521195
+      objectReference: {fileID: 0}
+    - target: {fileID: 4002094068394023523, guid: b8c10163bda8ded43875960a924a5398, type: 3}
+      propertyPath: ShowAnimation.Move.Settings.Curve.m_Curve.Array.data[2].inWeight
+      value: 0.5248393
+      objectReference: {fileID: 0}
+    - target: {fileID: 4002094068394023523, guid: b8c10163bda8ded43875960a924a5398, type: 3}
+      propertyPath: ShowAnimation.Move.Settings.Curve.m_Curve.Array.data[2].outSlope
+      value: 0.04207796
+      objectReference: {fileID: 0}
+    - target: {fileID: 4002094068394023523, guid: b8c10163bda8ded43875960a924a5398, type: 3}
+      propertyPath: ShowAnimation.Scale.Settings.Curve.m_Curve.Array.data[1].inSlope
+      value: 5.9879365
+      objectReference: {fileID: 0}
+    - target: {fileID: 4002094068394023523, guid: b8c10163bda8ded43875960a924a5398, type: 3}
+      propertyPath: ShowAnimation.Move.Settings.Curve.m_Curve.Array.data[0].outWeight
+      value: 0.024151811
+      objectReference: {fileID: 0}
+    - target: {fileID: 4002094068394023523, guid: b8c10163bda8ded43875960a924a5398, type: 3}
+      propertyPath: ShowAnimation.Move.Settings.Curve.m_Curve.Array.data[1].outWeight
+      value: 0.33333334
+      objectReference: {fileID: 0}
+    - target: {fileID: 4002094068394023523, guid: b8c10163bda8ded43875960a924a5398, type: 3}
+      propertyPath: ShowAnimation.Rotate.Settings.Curve.m_Curve.Array.data[0].inSlope
+      value: -1.5918956
+      objectReference: {fileID: 0}
+    - target: {fileID: 4002094068394023523, guid: b8c10163bda8ded43875960a924a5398, type: 3}
+      propertyPath: ShowAnimation.Rotate.Settings.Curve.m_Curve.Array.data[1].inSlope
+      value: -2.2672713
+      objectReference: {fileID: 0}
+    - target: {fileID: 4002094068394023523, guid: b8c10163bda8ded43875960a924a5398, type: 3}
+      propertyPath: ShowAnimation.Scale.Settings.Curve.m_Curve.Array.data[0].outSlope
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4002094068394023523, guid: b8c10163bda8ded43875960a924a5398, type: 3}
+      propertyPath: ShowAnimation.Scale.Settings.Curve.m_Curve.Array.data[1].inWeight
+      value: 0.022426665
+      objectReference: {fileID: 0}
+    - target: {fileID: 4002094068394023523, guid: b8c10163bda8ded43875960a924a5398, type: 3}
+      propertyPath: ShowAnimation.Scale.Settings.Curve.m_Curve.Array.data[1].outSlope
+      value: 5.9879365
+      objectReference: {fileID: 0}
+    - target: {fileID: 4002094068394023523, guid: b8c10163bda8ded43875960a924a5398, type: 3}
+      propertyPath: ShowAnimation.Rotate.Settings.Curve.m_Curve.Array.data[0].outSlope
+      value: -1.5918956
+      objectReference: {fileID: 0}
+    - target: {fileID: 4002094068394023523, guid: b8c10163bda8ded43875960a924a5398, type: 3}
+      propertyPath: ShowAnimation.Rotate.Settings.Curve.m_Curve.Array.data[1].inWeight
+      value: 0.04600376
+      objectReference: {fileID: 0}
+    - target: {fileID: 4002094068394023523, guid: b8c10163bda8ded43875960a924a5398, type: 3}
+      propertyPath: ShowAnimation.Rotate.Settings.Curve.m_Curve.Array.data[1].outSlope
+      value: -2.2672713
+      objectReference: {fileID: 0}
+    - target: {fileID: 4002094068394023523, guid: b8c10163bda8ded43875960a924a5398, type: 3}
+      propertyPath: ShowAnimation.Rotate.Settings.Curve.m_Curve.Array.data[0].outWeight
+      value: 0.027026983
+      objectReference: {fileID: 0}
+    - target: {fileID: 4455316999654785380, guid: b8c10163bda8ded43875960a924a5398, type: 3}
+      propertyPath: OnStartBehaviour
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 6923000111515286020, guid: b8c10163bda8ded43875960a924a5398, type: 3}
       propertyPath: m_Pivot.x
@@ -677,4 +1090,3 @@ SceneRoots:
   - {fileID: 1240468899}
   - {fileID: 1006349912}
   - {fileID: 1253333}
-  - {fileID: 259477328}

@@ -14,15 +14,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Database:
     Items:
+    - Category: FlowLoading
+      Name: Loading
+    - Category: FlowMainmenu
+      Name: Mainmenu
+    - Category: FlowMainmenu
+      Name: Setting
     - Category: None
       Name: None
-    - Category: Views
-      Name: Ingame
-    - Category: Views
-      Name: Lineup
-    - Category: Views
-      Name: MainMenu
-    - Category: Views
-      Name: Result
-    - Category: Views
-      Name: SelectCharacter
