@@ -30,7 +30,10 @@ namespace Doozy.Runtime.Signals
     {
         public enum FlowMainmenu
         {
-            Setting
+            Ingame,
+            Lose,
+            Setting,
+            Win
         }         
     }
 }

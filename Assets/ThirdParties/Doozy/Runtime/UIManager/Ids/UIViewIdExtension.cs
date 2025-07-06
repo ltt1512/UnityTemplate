@@ -35,8 +35,11 @@ namespace Doozy.Runtime.UIManager
 
         public enum FlowMainmenu
         {
+            Ingame,
+            Lose,
             Mainmenu,
-            Setting
+            Setting,
+            Win
         }    
     }
 }

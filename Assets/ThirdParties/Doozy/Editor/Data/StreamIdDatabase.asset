@@ -15,6 +15,12 @@ MonoBehaviour:
   Database:
     Items:
     - Category: FlowMainmenu
+      Name: Ingame
+    - Category: FlowMainmenu
+      Name: Lose
+    - Category: FlowMainmenu
       Name: Setting
+    - Category: FlowMainmenu
+      Name: Win
     - Category: None
       Name: None
