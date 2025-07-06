@@ -31,6 +31,11 @@ namespace Gamepplay.UI
             {
                 Signal.Send(StreamId.FlowMainmenu.Win);
             }
+
+            if (Input.GetKeyDown(KeyCode.L))
+            {
+                Signal.Send(StreamId.FlowMainmenu.Lose);
+            }
         }
     }
 }

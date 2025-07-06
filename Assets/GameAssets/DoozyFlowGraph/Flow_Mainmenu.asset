@@ -41,6 +41,17 @@ MonoBehaviour:
       Doozy, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
     CanBeDeleted: 0
     CanBeReordered: 0
+  - NodeId: b60225a7-fa9a-4611-bfb1-972ca7d74883
+    PortId: 3a082fad-04cc-41da-b9cc-adda99701bea
+    Direction: 1
+    Capacity: 0
+    Connections:
+    - 902557e6-ac77-4313-a7d7-4a61b2995356
+    Value: '{"Trigger":1,"TimeDelay":3.0,"SignalPayload":{"StreamId":{"Category":"FlowMainmenu","Name":"Lose","Custom":false},"SignalValueType":0,"IntegerValue":0,"BooleanValue":false,"FloatValue":0.0,"StringValue":"","ColorValue":{"r":0.0,"g":0.0,"b":0.0,"a":0.0},"Vector2Value":{"x":0.0,"y":0.0},"Vector3Value":{"x":0.0,"y":0.0,"z":0.0},"Vector4Value":{"x":0.0,"y":0.0,"z":0.0,"w":0.0}},"ButtonId":{"Category":"None","Name":"None","Custom":false},"ToggleId":{"Category":"None","Name":"None","Custom":false},"CommandToggle":2,"ViewId":{"Category":"None","Name":"None","Custom":false},"CommandShowHide":0}'
+    ValueTypeQualifiedName: Doozy.Runtime.UIManager.Nodes.PortData.UIOutputPortData,
+      Doozy, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+    CanBeDeleted: 1
+    CanBeReordered: 1
   RunUpdate: 0
   RunFixedUpdate: 0
   RunLateUpdate: 0
@@ -61,6 +72,71 @@ MonoBehaviour:
   - Id:
       Category: FlowMainmenu
       Name: Ingame
+      Custom: 0
+    Mode: 0
+  OnEnterHideAllViews: 1
+  OnExitHideAllViews: 0
+--- !u!114 &-6251576348928243441
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1c01f9a7d07f5c04a9f277379e94a10b, type: 3}
+  m_Name: UI
+  m_EditorClassIdentifier: 
+  FlowGraphId: 05fb0fa2-b09d-4bef-a19f-722d6888157f
+  NodeId: bf1876cb-4192-4d2e-9479-a1de9c8484e8
+  NodeType: 0
+  NodeName: Lose
+  NodeDescription: 
+  InputPorts:
+  - NodeId: bf1876cb-4192-4d2e-9479-a1de9c8484e8
+    PortId: 902557e6-ac77-4313-a7d7-4a61b2995356
+    Direction: 0
+    Capacity: 1
+    Connections:
+    - 3a082fad-04cc-41da-b9cc-adda99701bea
+    Value: '{"CanGoBack":true}'
+    ValueTypeQualifiedName: Doozy.Runtime.UIManager.Nodes.PortData.GoBackInputPortData,
+      Doozy, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+    CanBeDeleted: 0
+    CanBeReordered: 0
+  OutputPorts:
+  - NodeId: bf1876cb-4192-4d2e-9479-a1de9c8484e8
+    PortId: ce8b5f8f-6f0a-46a2-b2a0-bccfb376ba1e
+    Direction: 1
+    Capacity: 0
+    Connections:
+    - 7be20e4f-0c89-41b2-a0f7-a5620cbdb95f
+    Value: '{"Trigger":1,"TimeDelay":3.0,"SignalPayload":{"StreamId":{"Category":"FlowMainmenu","Name":"Ingame","Custom":false},"SignalValueType":0,"IntegerValue":0,"BooleanValue":false,"FloatValue":0.0,"StringValue":"","ColorValue":{"r":0.0,"g":0.0,"b":0.0,"a":0.0},"Vector2Value":{"x":0.0,"y":0.0},"Vector3Value":{"x":0.0,"y":0.0,"z":0.0},"Vector4Value":{"x":0.0,"y":0.0,"z":0.0,"w":0.0}},"ButtonId":{"Category":"None","Name":"None","Custom":false},"ToggleId":{"Category":"None","Name":"None","Custom":false},"CommandToggle":2,"ViewId":{"Category":"None","Name":"None","Custom":false},"CommandShowHide":0}'
+    ValueTypeQualifiedName: Doozy.Runtime.UIManager.Nodes.PortData.UIOutputPortData,
+      Doozy, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+    CanBeDeleted: 0
+    CanBeReordered: 0
+  RunUpdate: 0
+  RunFixedUpdate: 0
+  RunLateUpdate: 0
+  NodeState: 0
+  CanBeDeleted: 1
+  Passthrough: 0
+  ClearGraphHistory: 0
+  Position: {x: 368, y: 279}
+  OnEnterShowViews:
+  - Id:
+      Category: FlowMainmenu
+      Name: Lose
+      Custom: 0
+    Mode: 0
+  OnEnterHideViews: []
+  OnExitShowViews: []
+  OnExitHideViews:
+  - Id:
+      Category: FlowMainmenu
+      Name: Lose
       Custom: 0
     Mode: 0
   OnEnterHideAllViews: 1
@@ -179,8 +255,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 02761efe598a45c98fa1baf4d446c6a7, type: 3}
   m_Name: Flow_Mainmenu
   m_EditorClassIdentifier: 
-  EditorPosition: {x: -158, y: 269, z: 0}
-  EditorScale: {x: 2.3130608, y: 2.3130608, z: 1}
+  EditorPosition: {x: 723, y: 472, z: 0}
+  EditorScale: {x: 1, y: 1, z: 1}
   Id: 05fb0fa2-b09d-4bef-a19f-722d6888157f
   GraphName: Flow Graph
   GraphDescription: 
@@ -210,6 +286,7 @@ MonoBehaviour:
   - {fileID: -3783712268166862565}
   - {fileID: -7686400898792962606}
   - {fileID: 8774115949181829727}
+  - {fileID: -6251576348928243441}
   RootNode: {fileID: -3829918584808664647}
   ActiveNode: {fileID: 0}
 --- !u!114 &1841956973096333418
@@ -237,6 +314,7 @@ MonoBehaviour:
     Connections:
     - 9b6de7f7-e32c-4162-827f-35d8b1dbc1d0
     - fbb537fe-7947-42ed-8c08-146d33f1f47e
+    - ce8b5f8f-6f0a-46a2-b2a0-bccfb376ba1e
     Value: '{"CanGoBack":false}'
     ValueTypeQualifiedName: Doozy.Runtime.UIManager.Nodes.PortData.GoBackInputPortData,
       Doozy, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
@@ -337,7 +415,7 @@ MonoBehaviour:
   CanBeDeleted: 1
   Passthrough: 0
   ClearGraphHistory: 0
-  Position: {x: 358.24042, y: 157.27069}
+  Position: {x: 368, y: 148}
   OnEnterShowViews:
   - Id:
       Category: FlowMainmenu
