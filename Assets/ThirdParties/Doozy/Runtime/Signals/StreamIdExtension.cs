@@ -32,6 +32,7 @@ namespace Doozy.Runtime.Signals
         {
             Ingame,
             Lose,
+            MainMenu,
             Setting,
             Win
         }         

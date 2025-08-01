@@ -32,12 +32,12 @@ namespace Gamepplay.UI
 
         private void OnBtnReplayClick()
         {
-          BackButton.Fire();
+            BackButton.Fire();
         }
 
         private void OnBtnHomeClick()
         {
-            Signal.Send(StreamId.FlowMainmenu.Ingame);
+            Signal.Send(StreamId.FlowMainmenu.MainMenu);
         }
     }
 }

@@ -10,24 +10,21 @@ namespace Gameplay.UI
     public class ViewLoading : MonoBehaviour
     {
         public Progressor progressBar;
-        public Progressor progressorTxt;
 
         private void Start()
         {
             progressBar.SetValueAt(0);
-            progressorTxt.SetValueAt(0);
-             StartCoroutine(LoadingCoroutine(1));
+            StartCoroutine(LoadingCoroutine(1));
         }
 
         private IEnumerator LoadingCoroutine(int sceneId)
         {
-            
+
             AsyncOperation operation = SceneManager.LoadSceneAsync(sceneId);
             while (!operation.isDone)
             {
                 float progress = Mathf.Clamp01(operation.progress / 0.9f);
                 progressBar.SetValueAt(progress);
-                progressorTxt.SetValueAt(progress);
                 yield return null;
             }
 

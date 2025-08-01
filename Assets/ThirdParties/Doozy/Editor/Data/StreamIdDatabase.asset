@@ -19,6 +19,8 @@ MonoBehaviour:
     - Category: FlowMainmenu
       Name: Lose
     - Category: FlowMainmenu
+      Name: MainMenu
+    - Category: FlowMainmenu
       Name: Setting
     - Category: FlowMainmenu
       Name: Win
