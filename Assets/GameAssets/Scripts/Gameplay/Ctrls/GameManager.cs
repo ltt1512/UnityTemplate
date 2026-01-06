@@ -1,3 +1,6 @@
+using Cysharp.Threading.Tasks;
+using Doozy.Runtime.Nody;
+using Doozy.Runtime.Signals;
 using Sirenix.OdinInspector;
 using StansAssets.Foundation.Patterns;
 using System;
@@ -18,6 +21,7 @@ namespace Gameplay
     }
     public class GameManager : MonoBehaviour
     {
+        public FlowController flow;
         public static GameManager Instance { get; private set; }
         [ShowInInspector] public List<BaseCtrl> baseCtrls { get; set; } = new();
         public Dictionary<Type, BaseCtrl> ctrlDic { get; set; } = new();
@@ -35,7 +39,8 @@ namespace Gameplay
 
         private void Start()
         {
-            //Init();
+            Init();
+            ShowUI();
         }
 
         private void OnDestroy()
@@ -75,6 +80,12 @@ namespace Gameplay
                 ctrl.Init();
         }
 
+        private async void ShowUI()
+        {
+            await UniTask.WaitUntil(()=> flow.isValid);
+            await UniTask.DelayFrame(20);
+            Signal.Send(StreamId.FlowMainmenu.MainMenu);
+        }
         void Update()
         {
             bool isPlaying = GameManager.Instance.gameState == GameState.Playing;
