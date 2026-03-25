@@ -1,8 +1,7 @@
 
 
+using Foundation.Patterns;
 using Gameplay;
-using StansAssets.Foundation.Patterns;
-
 
 public class Config
 {
@@ -79,8 +78,6 @@ public class DataSaver
 public class GameplaySaveData
 {
     static string dataSaveKey = "gameplay_data";
-    public static int startTube = 5;
-    public static int startGun = 4;
     public static DataSaver GetData()
     {
         return ES3.Load(dataSaveKey, new DataSaver());

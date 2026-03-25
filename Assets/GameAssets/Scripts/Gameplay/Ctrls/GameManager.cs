@@ -1,8 +1,8 @@
 using Cysharp.Threading.Tasks;
 using Doozy.Runtime.Nody;
 using Doozy.Runtime.Signals;
+using Foundation.Patterns;
 using Sirenix.OdinInspector;
-using StansAssets.Foundation.Patterns;
 using System;
 using System.Collections.Generic;
 using UnityEngine;

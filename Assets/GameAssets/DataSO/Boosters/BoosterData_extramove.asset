@@ -9,9 +9,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3bd76c0fc98e49b88d5146f8747eae7f, type: 3}
-  m_Name: UIPopupDatabase
+  m_Script: {fileID: 11500000, guid: aac2bfddba7a8b944bdf39b87df65a3f, type: 3}
+  m_Name: BoosterData_extramove
   m_EditorClassIdentifier: 
-  Database:
-  - {fileID: 11400000, guid: 7ff656e0f438cb24c87dbce727a5cb8a, type: 2}
-  - {fileID: 11400000, guid: c1699c85be7f0a041ac0f080c4d7cb31, type: 2}
+  type: 1
+  displayName: Extra moves
+  icon: {fileID: 0}
+  unlockLevel: 1
+  currencyType: 0
+  cost: 5

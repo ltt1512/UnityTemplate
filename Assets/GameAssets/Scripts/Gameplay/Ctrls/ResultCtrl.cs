@@ -1,6 +1,6 @@
 using Doozy.Runtime.Signals;
+using Foundation.Patterns;
 using Sirenix.OdinInspector;
-using StansAssets.Foundation.Patterns;
 using UnityEngine;
 
 

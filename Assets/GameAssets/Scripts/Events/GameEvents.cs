@@ -1,4 +1,5 @@
-using StansAssets.Foundation.Patterns;
+
+using Foundation.Patterns;
 
 namespace Gameplay
 {

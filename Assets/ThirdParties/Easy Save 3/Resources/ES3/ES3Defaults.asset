@@ -35,8 +35,6 @@ MonoBehaviour:
     - Doozy
     - EasySave3
     - Sirenix.OdinInspector.Modules.Unity.Addressables
-    - StansAssets.Foundation
-    - StansAssets.Foundation.Samples.AudioCenter
     - UniTask
     - UniTask.Addressables
     - UniTask.DOTween

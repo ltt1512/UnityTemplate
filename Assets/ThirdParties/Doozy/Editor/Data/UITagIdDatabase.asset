@@ -16,3 +16,5 @@ MonoBehaviour:
     Items:
     - Category: None
       Name: None
+    - Category: Popup
+      Name: Popup

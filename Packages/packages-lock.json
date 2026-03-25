@@ -7,13 +7,6 @@
       "dependencies": {},
       "hash": "06067cd4c83e372310d6f79d1c625f6870ff7a2a"
     },
-    "com.stansassets.foundation": {
-      "version": "https://github.com/StansAssets/com.stansassets.foundation.git",
-      "depth": 0,
-      "source": "git",
-      "dependencies": {},
-      "hash": "99566f733837e99f735e5422cd1d323529fa9363"
-    },
     "com.unity.addressables": {
       "version": "1.22.3",
       "depth": 0,

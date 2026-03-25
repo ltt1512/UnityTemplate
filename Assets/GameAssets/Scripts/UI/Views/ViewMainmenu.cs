@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using Doozy.Runtime.Reactor.Animators;
 using Doozy.Runtime.Signals;
 using Doozy.Runtime.UIManager.Components;
+using Game.UI;
+using Gameplay;
 using UnityEngine;
 
 namespace Gamepplay.UI
@@ -25,7 +27,8 @@ namespace Gamepplay.UI
         private void OnBtnSettingClick()
         {
             //doozy stream
-            Signal.Send(StreamId.FlowMainmenu.Setting);
+            //Signal.Send(StreamId.FlowMainmenu.Setting);
+            GameManager.GetCtrl<PopupCtrl>().ShowPopup(PopupEnum.PopupSetting);
         }
 
         private void OnBtnPlayClick()
